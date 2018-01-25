@@ -14,9 +14,6 @@ namespace NodeCanvas.Tasks.I2Loc
         public BBParameter<string> primaryTerm;
         public BBParameter<string> secondaryTerm;
 
-        [HideInInspector] public BBParameter<int> _choiceIndex;
-
-
         protected override string info
         {
             get { return string.Format("Set the localization Term"); }
@@ -53,9 +50,6 @@ namespace NodeCanvas.Tasks.I2Loc
         {
             localizeObject = EditorUtils.BBParameterField("Localize Object", localizeObject) as BBParameter<Localize>;
 
-            //string[] terms = LocalizationManager.GetTermsList().ToArray();
-            //_choiceIndex.value = UnityEditor.EditorGUILayout.Popup("Term", _choiceIndex.value, terms);
-            //primaryTerm.value = terms[_choiceIndex.value];
             var terms = (!localizeObject.isNull && localizeObject.value.Source != null)
                 ? localizeObject.value.Source.GetTermsList()
                 : LocalizationManager.GetTermsList();

@@ -113,7 +113,107 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &532290700
+--- !u!1 &499646734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 499646738}
+  - component: {fileID: 499646737}
+  - component: {fileID: 499646736}
+  - component: {fileID: 499646735}
+  - component: {fileID: 499646739}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &499646735
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499646734}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &499646736
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499646734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &499646737
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499646734}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &499646738
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499646734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.917, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499646739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499646734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Sphere
+  _portrait: {fileID: 0}
+  _dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+  _dialogueOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &683818193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -121,133 +221,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
-  m_Name: Cube BehaviourTree
+  m_Script: {fileID: 11500000, guid: 2c3f478ef69fbe04fa9ed3664a8a443e, type: 3}
+  m_Name: Cube DialogueTree
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.7,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","translation":{"x":-4701.0,"y":-4968.0},"nodes":[{"_position":{"x":5136.0,"y":5063.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
-    Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
-    Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
-    World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4761.0,"y":5263.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"$type":"NodeCanvas.Tasks.I2Loc.I2SetNextLanguage"},"_position":{"x":4957.0,"y":5363.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"11"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
-    Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
-    Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
-    World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5066.0,"y":5280.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"13"},{"_action":{"localizeObject":{"_value":1},"primaryTerm":{"_value":"Standart
-    Unity Example"},"secondaryTerm":{"_value":""},"_choiceIndex":{"_value":1},"$type":"NodeCanvas.Tasks.I2Loc.I2SetTerm"},"_position":{"x":5213.0,"y":5361.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_action":{"actions":[{"languageSource":{},"selectionMode":{"_value":true},"term":{"_value":"Hidden"},"translation":{"_value":"","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetTranslation"},{"log":{"_value":"$translation","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5606.0,"y":5285.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"27"},{"_action":{"language":{"_value":"Ukrainian"},"$type":"NodeCanvas.Tasks.I2Loc.I2SetCurrentLanguage"},"_position":{"x":5333.0,"y":5274.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _serializedGraph: '{"version":2.7,"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"_position":{"x":5461.0,"y":5270.0},"_UID":"93bc257e-541c-41bd-89f1-a4d6dd7bcfc6","$type":"NodeCanvas.DialogueTrees.Jumper","$id":"2"},{"statement":{"_text":"This
+    is a dialogue text"},"_actorName":"Cube","_actorParameterID":"76ea210d-1b40-40c8-92a0-18c5f59b6711","_position":{"x":5374.0,"y":5094.0},"_UID":"9e2d3085-0eda-4cbc-8b71-fa69a37e919f","$type":"NodeCanvas.DialogueTrees.StatementNode"},{"availableChoices":[],"_position":{"x":5578.0,"y":5097.0},"_UID":"2fe99728-2ad8-4cb2-8ea2-c90435247864","$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode"},{"_position":{"x":5678.0,"y":5282.0},"_UID":"efcb7e9d-8c7d-433e-914c-1ac62dc934ba","$type":"NodeCanvas.DialogueTrees.FinishNode"},{"statement":{"_text":"This
+    is a dialogue text"},"_position":{"x":5774.0,"y":5145.0},"$type":"NodeCanvas.DialogueTrees.StatementNode"}],"connections":[],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Sphere","_id":"76ea210d-1b40-40c8-92a0-18c5f59b6711","_actorObject":1}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
   _objectReferences:
   - {fileID: 0}
-  - {fileID: 2012374795}
+  - {fileID: 499646739}
   _deserializationFailed: 0
-  repeat: 1
-  updateInterval: 0
---- !u!1 &651615297
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 651615298}
-  - component: {fileID: 651615301}
-  - component: {fileID: 651615300}
-  - component: {fileID: 651615299}
-  m_Layer: 5
-  m_Name: Text (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &651615298
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 651615297}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 705193594}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 49.22, y: 298.3}
-  m_SizeDelta: {x: -49.22, y: 30}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &651615299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 651615297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: Standart Unity Example
-  mTermSecondary: 
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  TermPrefix: 
-  TermSuffix: 
-  LocalizeOnAwake: 1
-  Source: {fileID: 0}
-  mTarget: {fileID: 651615300}
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  IgnoreNumbersInRTL: 1
-  CorrectAlignmentForRTL: 1
-  AddSpacesToJoinedLanguages: 0
-  TranslatedObjects: []
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
-  AlwaysForceLocalize: 0
-  mGUI_ShowReferences: 1
-  mGUI_ShowTems: 1
-  mGUI_ShowCallback: 1
---- !u!114 &651615300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 651615297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 80
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: This example shows how to localize Standard Unity Components like Audio
-    Sources, GUI Text, GUI Texture, Text Mesh and Prefabs
---- !u!222 &651615301
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 651615297}
+  _actorParameters:
+  - _keyName: Sphere
+    _id: 76ea210d-1b40-40c8-92a0-18c5f59b6711
+    _actorObject: {fileID: 499646739}
 --- !u!1 &705193590
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +324,6 @@ RectTransform:
   - {fileID: 2126278448}
   - {fileID: 2012374794}
   - {fileID: 809124414}
-  - {fileID: 651615298}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -446,7 +433,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: "\u0412\u044B\u0445\u043E\u0434"
 --- !u!222 &809124417
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -527,8 +514,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1294730039}
-  m_LocalRotation: {x: 0.26414582, y: 0.22065043, z: -0.062212367, w: 0.9368404}
-  m_LocalPosition: {x: 102.08501, y: -257.7873, z: 207.42249}
+  m_LocalRotation: {x: -0.23049186, y: 0.15884061, z: -0.038166255, w: -0.95926356}
+  m_LocalPosition: {x: 1.4236317, y: 2.252503, z: -4.1809096}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -596,6 +583,119 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1523085744
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400010, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ea4f45f1433c2404197edc445210b679, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1819527203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: Cube BehaviourTree
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.7,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","translation":{"x":-4834.0,"y":-4950.0},"nodes":[{"_position":{"x":5136.0,"y":5063.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
+    Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
+    Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
+    World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4761.0,"y":5263.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"$type":"NodeCanvas.Tasks.I2Loc.I2SetNextLanguage"},"_position":{"x":4957.0,"y":5363.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"11"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
+    Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
+    Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
+    World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5066.0,"y":5280.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"13"},{"_action":{"localizeObject":{"_value":1},"primaryTerm":{"_value":"Standart
+    Unity Example"},"secondaryTerm":{"_value":""},"$type":"NodeCanvas.Tasks.I2Loc.I2SetTerm"},"_position":{"x":5269.0,"y":5359.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_action":{"actions":[{"languageSource":{},"selectionMode":{"_value":true},"term":{"_value":"Hidden"},"translation":{"_value":"","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetTranslation"},{"log":{"_value":"$translation","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5502.0,"y":5295.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"26"},{"_action":{"actions":[{"languageSource":{},"term":{"_value":"Standart
+    Unity Example"},"translation":{"_value":"This example shows how to localize Standard
+    Unity Components like Audio Sources, GUI Text, GUI Texture, Text Mesh and Prefabs"},"statement":{"_text":"This
+    example shows how to localize Standard Unity Components like Audio Sources, GUI
+    Text, GUI Texture, Text Mesh and Prefabs"},"$type":"NodeCanvas.Tasks.I2Loc.I2Say"},{"languageSource":{},"terms":["Exit","Hidden","MainMenu","Options","Standart
+    Unity Example","-"],"statements":[{},{},{},{},{}],"_isDisabled":true,"$type":"NodeCanvas.Tasks.I2Loc.I2SayRandom"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5686.0,"y":5169.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"36"},{"_action":{"language":{"_value":"Ukrainian"},"$type":"NodeCanvas.Tasks.I2Loc.I2SetCurrentLanguage"},"_position":{"x":5311.0,"y":5226.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 2012374795}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0
 --- !u!1 &1930919465
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +709,7 @@ GameObject:
   - component: {fileID: 1930919468}
   - component: {fileID: 1930919467}
   - component: {fileID: 1930919466}
+  - component: {fileID: 1930919472}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -627,21 +728,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad115aca74ce3c4891b3f6de0b4aae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundGraphSerialization: '{"version":2.7,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","translation":{"x":-4701.0,"y":-4968.0},"nodes":[{"_position":{"x":5136.0,"y":5063.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
+  boundGraphSerialization: '{"version":2.7,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","translation":{"x":-4834.0,"y":-4950.0},"nodes":[{"_position":{"x":5136.0,"y":5063.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
     Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
     Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
     World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4761.0,"y":5263.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"$type":"NodeCanvas.Tasks.I2Loc.I2SetNextLanguage"},"_position":{"x":4957.0,"y":5363.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"11"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
     Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
     Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
     World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5066.0,"y":5280.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"13"},{"_action":{"localizeObject":{"_value":1},"primaryTerm":{"_value":"Standart
-    Unity Example"},"secondaryTerm":{"_value":""},"_choiceIndex":{"_value":1},"$type":"NodeCanvas.Tasks.I2Loc.I2SetTerm"},"_position":{"x":5213.0,"y":5361.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_action":{"actions":[{"languageSource":{},"selectionMode":{"_value":true},"term":{"_value":"Hidden"},"translation":{"_value":"","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetTranslation"},{"log":{"_value":"$translation","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5606.0,"y":5285.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"27"},{"_action":{"language":{"_value":"Ukrainian"},"$type":"NodeCanvas.Tasks.I2Loc.I2SetCurrentLanguage"},"_position":{"x":5333.0,"y":5274.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Unity Example"},"secondaryTerm":{"_value":""},"$type":"NodeCanvas.Tasks.I2Loc.I2SetTerm"},"_position":{"x":5269.0,"y":5359.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_action":{"actions":[{"languageSource":{},"selectionMode":{"_value":true},"term":{"_value":"Hidden"},"translation":{"_value":"","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetTranslation"},{"log":{"_value":"$translation","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5502.0,"y":5295.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"26"},{"_action":{"actions":[{"languageSource":{},"term":{"_value":"Standart
+    Unity Example"},"translation":{"_value":"This example shows how to localize Standard
+    Unity Components like Audio Sources, GUI Text, GUI Texture, Text Mesh and Prefabs"},"statement":{"_text":"This
+    example shows how to localize Standard Unity Components like Audio Sources, GUI
+    Text, GUI Texture, Text Mesh and Prefabs"},"$type":"NodeCanvas.Tasks.I2Loc.I2Say"},{"languageSource":{},"terms":["Exit","Hidden","MainMenu","Options","Standart
+    Unity Example","-"],"statements":[{},{},{},{},{}],"_isDisabled":true,"$type":"NodeCanvas.Tasks.I2Loc.I2SayRandom"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5686.0,"y":5169.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"36"},{"_action":{"language":{"_value":"Ukrainian"},"$type":"NodeCanvas.Tasks.I2Loc.I2SetCurrentLanguage"},"_position":{"x":5311.0,"y":5226.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
     Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 2012374795}
   enableAction: 0
   disableAction: 0
-  _graph: {fileID: 532290700}
+  _graph: {fileID: 1819527203}
   _blackboard: {fileID: 1930919467}
 --- !u!114 &1930919467
 MonoBehaviour:
@@ -723,12 +829,34 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1930919465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 103.97179, y: -260.3772, z: 211.20575}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1930919472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930919465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32e4b851ebd8fa4ea0645b99be1cf97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundGraphSerialization: '{"version":2.7,"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"_position":{"x":5461.0,"y":5270.0},"_UID":"93bc257e-541c-41bd-89f1-a4d6dd7bcfc6","$type":"NodeCanvas.DialogueTrees.Jumper","$id":"2"},{"statement":{"_text":"This
+    is a dialogue text"},"_actorName":"Cube","_actorParameterID":"76ea210d-1b40-40c8-92a0-18c5f59b6711","_position":{"x":5374.0,"y":5094.0},"_UID":"9e2d3085-0eda-4cbc-8b71-fa69a37e919f","$type":"NodeCanvas.DialogueTrees.StatementNode"},{"availableChoices":[],"_position":{"x":5578.0,"y":5097.0},"_UID":"2fe99728-2ad8-4cb2-8ea2-c90435247864","$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode"},{"_position":{"x":5678.0,"y":5282.0},"_UID":"efcb7e9d-8c7d-433e-914c-1ac62dc934ba","$type":"NodeCanvas.DialogueTrees.FinishNode"},{"statement":{"_text":"This
+    is a dialogue text"},"_position":{"x":5774.0,"y":5145.0},"$type":"NodeCanvas.DialogueTrees.StatementNode"}],"connections":[],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Sphere","_id":"76ea210d-1b40-40c8-92a0-18c5f59b6711","_actorObject":1}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+  boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 499646739}
+  enableAction: 1
+  disableAction: 2
+  _graph: {fileID: 683818193}
+  _blackboard: {fileID: 0}
 --- !u!1 &1980541482
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +1023,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Options
+  m_Text: "\u041E\u043F\u0446\u0438\u0438"
 --- !u!222 &2012374797
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1003,7 +1131,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u041C\u0435\u043D\u044E"
 --- !u!222 &2126278451
 CanvasRenderer:
   m_ObjectHideFlags: 0

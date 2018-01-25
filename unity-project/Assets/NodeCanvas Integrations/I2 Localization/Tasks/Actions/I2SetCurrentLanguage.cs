@@ -50,13 +50,6 @@ namespace NodeCanvas.Tasks.I2Loc
                 else
                     language.value = Languages[index];
             }
-            
-            //_choiceIndex.value = UnityEditor.EditorGUILayout.Popup("Language", _choiceIndex.value, languages);
-            //language.value = languages[_choiceIndex.value];
-
-            
-           
-
         }
         #endif
     }
