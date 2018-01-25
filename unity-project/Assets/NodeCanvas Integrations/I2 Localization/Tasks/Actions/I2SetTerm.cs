@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using I2.Loc;
+﻿using I2.Loc;
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
-using UnityEngine.Analytics;
+using UnityEngine;
 
 namespace NodeCanvas.Tasks.I2Loc
 {
@@ -15,7 +14,7 @@ namespace NodeCanvas.Tasks.I2Loc
         public BBParameter<string> primaryTerm;
         public BBParameter<string> secondaryTerm;
 
-        private int _choiceIndex = 0;
+        [HideInInspector] public BBParameter<int> _choiceIndex;
 
 
         protected override string info
@@ -50,10 +49,8 @@ namespace NodeCanvas.Tasks.I2Loc
         #if UNITY_EDITOR
                 protected override void OnTaskInspectorGUI(){
                     string[] terms = LocalizationManager.GetTermsList().ToArray();
-                    _choiceIndex = UnityEditor.EditorGUILayout.Popup("Term", _choiceIndex, terms);
-                    if (_choiceIndex < 0)
-                        _choiceIndex = 0;
-                    primaryTerm.value = terms[_choiceIndex];
+                    _choiceIndex.value = UnityEditor.EditorGUILayout.Popup("Term", _choiceIndex.value, terms);
+                    primaryTerm.value = terms[_choiceIndex.value];
                 }
         #endif
     }

@@ -1,7 +1,7 @@
 ﻿using I2.Loc;
 using NodeCanvas.Framework;
-using ParadoxNotion;
 using ParadoxNotion.Design;
+using UnityEngine;
 
 namespace NodeCanvas.Tasks.I2Loc
 {
@@ -12,7 +12,7 @@ namespace NodeCanvas.Tasks.I2Loc
     {
         public BBParameter<string> language;
         
-        private int _choiceIndex = 0;
+        [HideInInspector] public BBParameter<int> _choiceIndex;
 
         protected override string info
         {
@@ -38,10 +38,8 @@ namespace NodeCanvas.Tasks.I2Loc
         protected override void OnTaskInspectorGUI()
         {
             string[] languages = LocalizationManager.GetAllLanguages().ToArray();
-            _choiceIndex = UnityEditor.EditorGUILayout.Popup("Language", _choiceIndex, languages);
-            if (_choiceIndex < 0)
-                _choiceIndex = 0;
-            language.value = languages[_choiceIndex];
+            _choiceIndex.value = UnityEditor.EditorGUILayout.Popup("Language", _choiceIndex.value, languages);
+            language.value = languages[_choiceIndex.value];
         }
         #endif
     }
