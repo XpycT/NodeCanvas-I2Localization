@@ -6,8 +6,7 @@
 /unity-project/[Bb]uilds/
 /unity-project/[Pp]ackages/
 /unity-project/[Uu]nity[Pp]ackage[Mm]anager/
-**/Assets/Plugins/Editor/JetBrains
-**/Assets/Plugins/Editor/JetBrains.meta
+**/Assets/Plugins/Editor/JetBrains*
 **/Assets/AssetStoreTools*
 
 Assembly-CSharp*.csproj
