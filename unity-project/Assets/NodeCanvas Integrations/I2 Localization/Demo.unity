@@ -113,6 +113,32 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &532290700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: Cube BehaviourTree
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.7,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","translation":{"x":-4701.0,"y":-4968.0},"nodes":[{"_position":{"x":5136.0,"y":5063.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
+    Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
+    Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
+    World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4761.0,"y":5263.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"$type":"NodeCanvas.Tasks.I2Loc.I2SetNextLanguage"},"_position":{"x":4957.0,"y":5363.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"11"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
+    Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
+    Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
+    World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5066.0,"y":5280.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"13"},{"_action":{"localizeObject":{"_value":1},"primaryTerm":{"_value":"Standart
+    Unity Example"},"secondaryTerm":{"_value":""},"_choiceIndex":{"_value":1},"$type":"NodeCanvas.Tasks.I2Loc.I2SetTerm"},"_position":{"x":5213.0,"y":5361.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_action":{"actions":[{"languageSource":{},"selectionMode":{"_value":true},"term":{"_value":"Hidden"},"translation":{"_value":"","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetTranslation"},{"log":{"_value":"$translation","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5606.0,"y":5285.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"27"},{"_action":{"language":{"_value":"Ukrainian"},"$type":"NodeCanvas.Tasks.I2Loc.I2SetCurrentLanguage"},"_position":{"x":5333.0,"y":5274.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 2012374795}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0
 --- !u!1 &651615297
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,32 +596,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1851971973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
-  m_Name: Cube BehaviourTree
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.7,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","translation":{"x":-4701.0,"y":-4968.0},"nodes":[{"_position":{"x":5136.0,"y":5063.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
-    Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
-    Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
-    World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4761.0,"y":5263.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"$type":"NodeCanvas.Tasks.I2Loc.I2SetNextLanguage"},"_position":{"x":4957.0,"y":5363.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"11"},{"_action":{"actions":[{"currentLanguage":{"_name":"Current
-    Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
-    Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
-    World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5066.0,"y":5280.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"13"},{"_action":{"localizeObject":{"_value":1},"primaryTerm":{"_value":"Standart
-    Unity Example"},"secondaryTerm":{"_value":""},"_choiceIndex":{"_value":1},"$type":"NodeCanvas.Tasks.I2Loc.I2SetTerm"},"_position":{"x":5213.0,"y":5361.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_action":{"actions":[{"languageObject":{},"term":{"_value":"Hidden"},"translation":{"_value":"","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetTranslation"},{"log":{"_value":"$translation","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5606.0,"y":5285.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"27"},{"_action":{"language":{"_value":"Ukrainian"},"$type":"NodeCanvas.Tasks.I2Loc.I2SetCurrentLanguage"},"_position":{"x":5333.0,"y":5274.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 2012374795}
-  _deserializationFailed: 0
-  repeat: 1
-  updateInterval: 0
 --- !u!1 &1930919465
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,14 +634,14 @@ MonoBehaviour:
     Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"currentLanguageCode":{"_name":"Current
     Language Code","_targetVariableID":"c477827d-12e9-4b76-8f68-504eb5ff6141"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetCurrentLanguage"},{"log":{"_value":"Hello
     World","_name":"Current Language","_targetVariableID":"2c8c61ee-0321-408b-a381-c8fb14fcf22d"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5066.0,"y":5280.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"13"},{"_action":{"localizeObject":{"_value":1},"primaryTerm":{"_value":"Standart
-    Unity Example"},"secondaryTerm":{"_value":""},"_choiceIndex":{"_value":1},"$type":"NodeCanvas.Tasks.I2Loc.I2SetTerm"},"_position":{"x":5213.0,"y":5361.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_action":{"actions":[{"languageObject":{},"term":{"_value":"Hidden"},"translation":{"_value":"","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetTranslation"},{"log":{"_value":"$translation","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5606.0,"y":5285.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"27"},{"_action":{"language":{"_value":"Ukrainian"},"$type":"NodeCanvas.Tasks.I2Loc.I2SetCurrentLanguage"},"_position":{"x":5333.0,"y":5274.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Unity Example"},"secondaryTerm":{"_value":""},"_choiceIndex":{"_value":1},"$type":"NodeCanvas.Tasks.I2Loc.I2SetTerm"},"_position":{"x":5213.0,"y":5361.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"21"},{"_action":{"actions":[{"languageSource":{},"selectionMode":{"_value":true},"term":{"_value":"Hidden"},"translation":{"_value":"","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.I2Loc.I2GetTranslation"},{"log":{"_value":"$translation","_name":"_translation","_targetVariableID":"072c903f-8bd3-4c5b-b093-6a92b0cb5d15"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5606.0,"y":5285.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"27"},{"_action":{"language":{"_value":"Ukrainian"},"$type":"NodeCanvas.Tasks.I2Loc.I2SetCurrentLanguage"},"_position":{"x":5333.0,"y":5274.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
     Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 2012374795}
   enableAction: 0
   disableAction: 0
-  _graph: {fileID: 1851971973}
+  _graph: {fileID: 532290700}
   _blackboard: {fileID: 1930919467}
 --- !u!114 &1930919467
 MonoBehaviour:
