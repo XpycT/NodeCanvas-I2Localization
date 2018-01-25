@@ -21,8 +21,9 @@ namespace NodeCanvas.Tasks.I2Loc
         {
             get { return string.Format("Set the localization Term"); }
         }
-        
-        protected override string OnInit(){
+
+        protected override string OnInit()
+        {
             if (LocalizationManager.GetTermsList().Count == 0)
                 return "LocalizationManager do not have any terms!";
             return null;
@@ -30,7 +31,7 @@ namespace NodeCanvas.Tasks.I2Loc
 
         protected override void OnUpdate()
         {
-            bool status = false;	
+            bool status = false;
             if (localizeObject.value != null)
             {
                 if (string.IsNullOrEmpty(secondaryTerm.value))
@@ -40,18 +41,54 @@ namespace NodeCanvas.Tasks.I2Loc
 
                 status = true;
             }
+
             EndAction(status);
         }
-        
+
         ////////////////////////////////////////
         ///////////GUI AND EDITOR STUFF/////////
         ////////////////////////////////////////
-        #if UNITY_EDITOR
-                protected override void OnTaskInspectorGUI(){
-                    string[] terms = LocalizationManager.GetTermsList().ToArray();
-                    _choiceIndex.value = UnityEditor.EditorGUILayout.Popup("Term", _choiceIndex.value, terms);
-                    primaryTerm.value = terms[_choiceIndex.value];
-                }
-        #endif
+#if UNITY_EDITOR
+        protected override void OnTaskInspectorGUI()
+        {
+            localizeObject = EditorUtils.BBParameterField("Localize Object", localizeObject) as BBParameter<Localize>;
+
+            //string[] terms = LocalizationManager.GetTermsList().ToArray();
+            //_choiceIndex.value = UnityEditor.EditorGUILayout.Popup("Term", _choiceIndex.value, terms);
+            //primaryTerm.value = terms[_choiceIndex.value];
+            var terms = (!localizeObject.isNull && localizeObject.value.Source != null)
+                ? localizeObject.value.Source.GetTermsList()
+                : LocalizationManager.GetTermsList();
+            terms.Sort(System.StringComparer.OrdinalIgnoreCase);
+            terms.Add("");
+            terms.Add("<inferred from text>");
+            terms.Add("<none>");
+            var aTerms = terms.ToArray();
+
+            DoTermPopup("Primary Term", primaryTerm, aTerms);
+            DoTermPopup("Secondary Term", secondaryTerm, aTerms);
+        }
+
+        bool DoTermPopup(string label, BBParameter<string> sTerm, string[] aTerms)
+        {
+            var index = (sTerm.value == "-" || sTerm.value == ""
+                ? aTerms.Length - 1
+                : (sTerm.value == " " ? aTerms.Length - 2 : System.Array.IndexOf(aTerms, sTerm.value)));
+
+            var newIndex = UnityEditor.EditorGUILayout.Popup(label, index, aTerms);
+
+            if (index == newIndex) return false;
+
+            sTerm.value = (newIndex < 0 || newIndex == aTerms.Length - 1) ? string.Empty : aTerms[newIndex];
+            if (newIndex == aTerms.Length - 1)
+                sTerm.value = "-";
+            else if (newIndex < 0 || newIndex == aTerms.Length - 2)
+                sTerm.value = string.Empty;
+            else
+                sTerm.value = aTerms[newIndex];
+
+            return true;
+        }
+#endif
     }
 }
