@@ -1,0 +1,37 @@
+# Unity
+/unity-project/[Ll]ibrary/
+/unity-project/[Tt]emp/
+/unity-project/[Oo]bj/
+/unity-project/[Bb]uild/
+/unity-project/[Bb]uilds/
+/unity-project/[Pp]ackages/
+/unity-project/[Uu]nity[Pp]ackage[Mm]anager/
+**/Assets/Plugins/Editor/JetBrains
+**/Assets/Plugins/Editor/JetBrains.meta
+**/Assets/AssetStoreTools*
+
+Assembly-CSharp*.csproj
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Solution
+obj
+bin
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.pidb.meta
+test-results
+
+# IDEs
+.idea
